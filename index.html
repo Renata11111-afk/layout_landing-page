@@ -10,8 +10,8 @@
     <link
       rel="icon"
       type="image/png"
-      href="/src/images/favicon.png"
-      sizes="32x32"
+      href="/src/images/favicon.svg"
+      sizes="35x30"
     >
 
     <title>MyBike</title>
@@ -44,13 +44,15 @@
           <div class="top-bar">
             <a href="#top-page" class="top-bar__logo-link">
               <img
-                src="/src/images/mybike-logo-2x.png"
+                src="/src/images/mybike-logo.svg"
                 alt="mybike-logo"
                 class="top-bar__logo"
               >
             </a>
             <div class="top-bar__icons">
-              <a href="tel: +1 234 5555-55-55" class="icon icon--phone"></a>
+              <a href="tel:+12345555555" class="icon icon--phone">
+                <span class="icon__phone-number">+1 234 555-55-55</span>
+              </a>
               <a href="#menu" class="icon icon--menu"></a>
             </div>
           </div>
@@ -66,7 +68,7 @@
         <div class="top-bar menu__top">
           <a href="#top-page" class="top-bar__logo-link">
             <img
-              src="/src/images/mybike-logo-2x-dark.png"
+              src="/src/images/mybike-logo-dark.svg"
               alt="mybike-logo"
               class="top-bar__logo"
             >
@@ -125,31 +127,37 @@
             <h2 class="section-title">Compare bikes</h2>
             <div class="compare-bikes__products">
               <article class="product compare-bikes__product">
-                <img
-                  src="/src/images/compare-bikes-bike1.png"
-                  alt="Sporty 4"
-                  class="product__photo"
-                >
+                <a href="#">
+                  <img
+                    src="/src/images/compare-bikes-bike1.png"
+                    alt="Sporty 4"
+                    class="product__photo"
+                  >
+                </a>
                 <h3 class="product__title">Sporty 4</h3>
                 <p class="product__description">The iconic frame brought to a new performance height as a sporty, active ride.</p>
                 <p class="product__price">$ 2 590</p>
               </article>
               <article class="product compare-bikes__product">
-                <img
-                  src="/src/images/compare-bikes-bike2.png"
-                  alt="Ride in town ST"
-                  class="product__photo"
-                >
+                <a href="#">
+                  <img
+                    src="/src/images/compare-bikes-bike2.png"
+                    alt="Ride in town ST"
+                    class="product__photo"
+                  >
+                </a>
                 <h3 class="product__title">Ride in town ST</h3>
                 <p class="product__description">An open frame for an upright riding position as the most comfortable ride in town.</p>
                 <p class="product__price">$ 2 590</p>
               </article>
               <article class="product compare-bikes__product">
-                <img
-                  src="/src/images/compare-bikes-bike3.png"
-                  alt="Agile ride 3"
-                  class="product__photo"
-                >
+                <a href="#">
+                  <img
+                    src="/src/images/compare-bikes-bike3.png"
+                    alt="Agile ride 3"
+                    class="product__photo"
+                  >
+                </a>
                 <h3 class="product__title">Agile ride 3</h3>
                 <p class="product__description">The lightweight frame that has earned its street tread as a sleek, agile ride.</p>
                 <p class="product__price">$ 2 090</p>
@@ -251,25 +259,26 @@
 
               <div class="contacts__element">
                 <form
+                onsubmit="this.reset(); return false;"
                 class="contacts__form"
                 >
                   <input
                     class="contacts__form-input"
                     type="text"
                     required
-                    placeholder="Name"
+                    placeholder="Enter your name"
                   />
                   <input
                     class="contacts__form-input"
                     type="email"
                     required
-                    placeholder="Email"
+                    placeholder="example@gmail.com"
                   />
                   <textarea
                     class="contacts__form-textarea"
                     rows="1"
                     required
-                    placeholder="Message"
+                    placeholder="Enter your message"
                   ></textarea>
                   <button type="submit" class="contacts__form-button" >Send</button>
                 </form>
@@ -277,11 +286,16 @@
 
               <div class="contacts__info">
                 <p class="contacts__title">Phone</p>
-                <p class="contacts__description">+1 234 5555-55-55</p>
+                <a href="tel:+12345555555" class="contacts__description">+1 234 5555-55-55</a>
                 <p class="contacts__title">Email</p>
-                <p class="contacts__description">hello@miami.com</p>
+                <a href="email:hello@miami.com" class="contacts__description">hello@miami.com</a>
                 <p class="contacts__title">Address</p>
-                <p class="contacts__description">400 first ave.<br>suite 700<br>Minneapolis, MN 55401</p>
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=400+first+ave+suite+700+Minneapolis+MN+55401"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="contacts__description"
+                >400 first ave.<br>suite 700<br>Minneapolis, MN 55401</a>
               </div>
 
             </div>

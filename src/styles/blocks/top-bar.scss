@@ -9,9 +9,45 @@
     padding-block: 36px;
   }
 
+  @include on-desktop {
+    padding-block: 60px;
+  }
+
   &__icons {
     display: flex;
     gap: 24px;
+  }
+
+  .icon--phone {
+    position: relative;
+  }
+
+  .icon--phone .icon__phone-number {
+    position: absolute;
+    top: 50%;
+    left: 100%;
+
+    transform: translateY(-50%) translateX(-120px);
+    opacity: 0;
+
+    white-space: nowrap;
+    margin-left: 12px;
+    padding: 6px 12px;
+
+    color: $text-color-light;
+    font-size: 14px;
+    border-radius: 20px;
+
+    pointer-events: none;
+
+    transition:
+      transform $effect-duration ease,
+      opacity $effect-duration ease;
+  }
+
+  .icon--phone:hover .icon__phone-number {
+    transform: translateY(-50%) translateX(-200px);
+    opacity: 1;
   }
 
   &__logo-link {

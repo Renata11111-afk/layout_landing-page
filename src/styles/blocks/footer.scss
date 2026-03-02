@@ -1,4 +1,7 @@
 .footer {
+  position: relative;
+  z-index: -1;
+
   &__bg {
     height: 200px;
     background-size: cover;

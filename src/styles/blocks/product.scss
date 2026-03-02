@@ -2,7 +2,10 @@
   &__photo {
     display: block;
     width: 100%;
-    object-fit: cover;
+    object-fit: contain;
+    cursor: pointer;
+    
+    @include hover(transform, scale(1.05));
 
     @include on-desktop {
       width: 100%;

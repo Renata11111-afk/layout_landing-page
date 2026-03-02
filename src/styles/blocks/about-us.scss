@@ -1,6 +1,8 @@
 .about-us {
   @include page-grid;
 
+  gap: 32px;
+
   &__title {
     grid-column: 1 / -1;
 
