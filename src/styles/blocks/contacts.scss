@@ -41,7 +41,7 @@
     margin-bottom: 16px;
     padding: 14px 16px;
     align-items: center;
-    background: $bg-color-input;
+    background: $bg-color-light;
   }
 
   &__form-input,
@@ -60,7 +60,7 @@
     &::placeholder {
       color: $text-color-placeholder;
       font-family: $main-font;
-      transition: color 0.3s;
+      transition: color $effect-duration;
     }
 
     &:hover,

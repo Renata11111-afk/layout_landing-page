@@ -4,6 +4,7 @@
     color: $text-color-dark;
     text-decoration: none;
     font-size: 22px;
+    font-weight: 700;
     line-height: 22px;
     letter-spacing: 2px;
 
@@ -12,7 +13,7 @@
       display: block;
       width: 100%;
       position: absolute;
-      bottom: -8px;
+      bottom: -4px;
       height: 1px;
       background-color: $text-color-dark;
 

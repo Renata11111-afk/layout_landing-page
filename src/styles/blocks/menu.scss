@@ -1,8 +1,7 @@
 .menu {
-  overflow: auto;
   box-sizing: border-box;
   height: 100vh;
-  background-color: #c2c2c2;
+  background-color: $bg-color-menu;
   font-weight: 600;
   text-transform: uppercase;
 
@@ -10,7 +9,7 @@
     position: sticky;
     top: 0;
     z-index: 1;
-    margin-bottom: 32px;
+    margin-bottom: 24px;
   }
 
   &__nav {
@@ -23,19 +22,21 @@
     color: $text-color-dark;
     text-decoration: none;
     font-style: 16px;
+    font-weight: 700;
     line-height: 27px;
   }
 
   &__book-a-test-ride {
     display: block;
     width: fit-content;
-    padding-bottom: 7px;
+    padding-bottom: 8px;
     border-bottom: 1px solid $text-color-dark;
 
     color: $text-color-dark;
     text-decoration: none;
     font-size: 12px;
     line-height: 16px;
+    font-weight: 700;
     letter-spacing: 2px;
   }
 }

@@ -18,7 +18,7 @@
     line-height: 100%;
     letter-spacing: -1.5px;
     text-align: center;
-    color: #fff;
+    color: $text-color-light;
 
     @include on-tablet {
       font-size: 64px;
