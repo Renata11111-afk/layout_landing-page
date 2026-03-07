@@ -20,7 +20,6 @@
     pointer-events: none;
 
     &:target {
-      overflow: hidden;
       opacity: 1;
       transform: translateX(0);
       pointer-events: all;

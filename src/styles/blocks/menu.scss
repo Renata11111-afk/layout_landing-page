@@ -1,6 +1,8 @@
 .menu {
   box-sizing: border-box;
   height: 100vh;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
   background-color: $bg-color-menu;
   font-weight: 600;
   text-transform: uppercase;
@@ -10,6 +12,7 @@
     top: 0;
     z-index: 1;
     margin-bottom: 24px;
+    background-color: $bg-color-menu;
   }
 
   &__nav {
@@ -29,6 +32,7 @@
   &__book-a-test-ride {
     display: block;
     width: fit-content;
+    margin-bottom: 48px;
     padding-bottom: 8px;
     border-bottom: 1px solid $text-color-dark;
 
